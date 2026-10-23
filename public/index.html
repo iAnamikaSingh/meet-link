@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>
+      MeetLink – Free Meeting Links with Passcode, Chat &amp; Auto-Expiry
+    </title>
+    <meta
+      name="description"
+      content="Create a meeting link or passcode in one click, set when it expires (60 minutes by default), then chat, video call, voice call and share images."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://YOUR-DOMAIN/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="MeetLink – Instant Meeting Links with Passcode and Auto-Expiry"
+    />
+    <meta
+      property="og:description"
+      content="Generate a passcode or link, control who sees the expiry, and meet with chat, video, voice and image sharing."
+    />
+    <meta name="twitter:card" content="summary" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎥%3C/text%3E%3C/svg%3E"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "name": "MeetLink",
+            "applicationCategory": "CommunicationApplication",
+            "operatingSystem": "Any (web browser)",
+            "description": "Create a meeting passcode or link with an expiry time. Participants can chat, start video or voice calls and share images.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Passcode and link generation",
+              "Expiry timer, 60 minutes by default",
+              "Admin controls who can see the expiry",
+              "Group chat",
+              "Video and voice calls",
+              "Image sharing"
+            ]
+          },
+          {
+            "@type": "HowTo",
+            "name": "How to start a meeting with MeetLink",
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Create",
+                "text": "Choose an expiry time and who can see it, then create the meeting."
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Share",
+                "text": "Send the passcode or link to your group."
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Meet",
+                "text": "Everyone who joins can chat, call and share images until the meeting expires."
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do I create a meeting link with a passcode?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Open Create, choose an expiry time and who can see it, then press Create meeting. MeetLink generates a passcode and a shareable link instantly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does a meeting last by default?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "60 minutes. The admin can pick 15, 30, 120 or 240 minutes, or a custom duration up to 24 hours."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who can see the expiration time?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The admin decides: everyone in the meeting, or only the admin."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who can join a meeting?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Anyone with the passcode or the link can join until the meeting expires."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I share images in the meeting?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Images added in the chat appear for everyone currently in the meeting."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="container">
+        <a class="site-nav__logo" href="#home">🎥 MeetLink</a>
+        <a class="site-nav__link" href="#create" data-route="create">Create</a
+        ><a class="site-nav__link" href="#join" data-route="join">Join</a
+        ><a
+          class="site-nav__link"
+          href="#how-it-works"
+          data-route="how-it-works"
+          >How it works</a
+        ><a class="site-nav__link" href="#faq" data-route="faq">FAQ</a>
+      </div>
+    </nav>
+
+    <main id="main">
+      <section class="view" id="v-home">
+        <div class="container">
+          <div class="split">
+            <div>
+              <h1>Meeting links that expire on your schedule</h1>
+              <p class="lead">
+                Create a passcode or link in seconds, choose how long it lasts,
+                then chat, call and share images with everyone who joins.
+                Nothing to install.
+              </p>
+              <div class="row mt-6">
+                <a class="btn btn--primary" href="#create">Create a meeting</a
+                ><a class="btn" href="#join">Join with a passcode</a>
+              </div>
+            </div>
+            <div class="card">
+              <h2>Included, free</h2>
+              <p class="text-muted feature-list">
+                ✔ Passcode and link sharing<br />✔ Auto-expiry, 60 minutes by
+                default<br />✔ Admin decides who sees the countdown<br />✔ Group
+                chat and image sharing<br />✔ Video and voice calls
+              </p>
+            </div>
+          </div>
+          <h2 class="mt-12">Three steps</h2>
+          <div class="grid">
+            <article class="card">
+              <div class="step-number">1</div>
+              <h3>Create</h3>
+              <p class="text-muted text-sm">
+                Pick an expiry and who can see it.
+              </p>
+            </article>
+            <article class="card">
+              <div class="step-number">2</div>
+              <h3>Share</h3>
+              <p class="text-muted text-sm">
+                Send the passcode or link to your group.
+              </p>
+            </article>
+            <article class="card">
+              <div class="step-number">3</div>
+              <h3>Meet</h3>
+              <p class="text-muted text-sm">
+                Chat, call and share images until it expires.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="view is-hidden" id="v-create">
+        <div class="container">
+          <div class="split">
+            <div>
+              <h1 class="title-lg">Create a meeting</h1>
+              <p class="text-muted">
+                Set it up once. You get a passcode and a link to share.
+              </p>
+              <div class="card">
+                <label for="duration" class="mt-0">Expires after</label>
+                <select id="duration">
+                  <option value="15">15 minutes</option>
+                  <option value="30">30 minutes</option>
+                  <option value="60" selected>60 minutes (default)</option>
+                  <option value="120">2 hours</option>
+                  <option value="240">4 hours</option>
+                  <option value="c">Custom…</option>
+                </select>
+                <input
+                  id="custom-minutes"
+                  class="is-hidden mt-2"
+                  type="number"
+                  min="1"
+                  max="1440"
+                  placeholder="Minutes, 1 to 1440"
+                  aria-label="Custom minutes"
+                />
+                <label for="visibility">Who can see the expiration?</label>
+                <select id="visibility">
+                  <option value="E">Everyone in the meeting</option>
+                  <option value="A">Only me (admin)</option>
+                </select>
+                <p class="hint">
+                  If hidden, others just see that the meeting will end on its
+                  own.
+                </p>
+                <label for="admin-name">Your name</label
+                ><input
+                  id="admin-name"
+                  maxlength="24"
+                  placeholder="Admin"
+                  autocomplete="nickname"
+                />
+                <div class="mt-5">
+                  <button class="btn btn--primary" id="create-submit">
+                    Create meeting
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="created-panel" class="card is-hidden" aria-live="polite">
+              <h2 class="text-success">Meeting ready</h2>
+              <div class="text-muted text-sm mt-3">Passcode</div>
+              <div class="passcode" id="created-code"></div>
+              <div class="text-muted text-sm mt-4">Link</div>
+              <div class="text-sm break-all" id="created-link"></div>
+              <div class="row mt-5">
+                <button id="copy-code">Copy passcode</button
+                ><button id="copy-link">Copy link</button>
+              </div>
+              <div class="mt-4">
+                <a class="btn btn--primary" id="open-meeting" href="#"
+                  >Open meeting</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view is-hidden" id="v-join">
+        <div class="container container--sm">
+          <h1 class="title-lg">Join a meeting</h1>
+          <p class="text-muted">
+            Enter the 11-character passcode you were given.
+          </p>
+          <div class="card">
+            <label for="join-code" class="mt-0">Passcode</label>
+            <input
+              id="join-code"
+              maxlength="11"
+              placeholder="e.g. K3F9ABC123E"
+              autocomplete="off"
+              class="input-code"
+            />
+            <p class="form-error" id="join-error" role="alert"></p>
+            <button class="btn btn--primary" id="join-submit">Continue</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="view is-hidden" id="v-how-it-works">
+        <div class="container">
+          <h1 class="title-lg">How MeetLink works</h1>
+          <div class="grid mt-5">
+            <article class="card">
+              <h3>Passcode and link</h3>
+              <p class="text-muted text-sm">
+                Each meeting has one 11-character passcode. The link opens the
+                same meeting. Anyone with either can join.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Expiry</h3>
+              <p class="text-muted text-sm">
+                Choose 15 minutes to 24 hours. 60 minutes is the default. The
+                meeting closes for everyone when time is up.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Admin controls</h3>
+              <p class="text-muted text-sm">
+                The person who creates the meeting is the admin and chooses
+                whether everyone or only the admin sees the countdown.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Chat and images</h3>
+              <p class="text-muted text-sm">
+                Messages and images go to everyone currently in the meeting.
+                Nothing is saved after you leave.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Video and voice</h3>
+              <p class="text-muted text-sm">
+                Start a video or voice-only call from the room. Your browser
+                asks for camera or microphone access first.
+              </p>
+            </article>
+          </div>
+          <div class="mt-6">
+            <a class="btn btn--primary" href="#create">Create a meeting</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="view is-hidden" id="v-faq">
+        <div class="container container--md">
+          <h1 class="title-lg">Frequently asked questions</h1>
+          <details open>
+            <summary>How do I create a meeting link with a passcode?</summary>
+            <p>
+              Open Create, choose an expiry time and who can see it, then press
+              Create meeting. MeetLink generates a passcode and a shareable link
+              instantly.
+            </p>
+          </details>
+          <details open>
+            <summary>How long does a meeting last by default?</summary>
+            <p>
+              60 minutes. The admin can pick 15, 30, 120 or 240 minutes, or a
+              custom duration up to 24 hours.
+            </p>
+          </details>
+          <details open>
+            <summary>Who can see the expiration time?</summary>
+            <p>
+              The admin decides: everyone in the meeting, or only the admin.
+            </p>
+          </details>
+          <details open>
+            <summary>Who can join a meeting?</summary>
+            <p>
+              Anyone with the passcode or the link can join until the meeting
+              expires.
+            </p>
+          </details>
+          <details open>
+            <summary>Can I share images in the meeting?</summary>
+            <p>
+              Yes. Images added in the chat appear for everyone currently in the
+              meeting.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="view is-hidden" id="v-lobby">
+        <div class="container container--sm">
+          <div class="card" id="lobby-ready">
+            <h1 class="title-md">Ready to join?</h1>
+            <p class="text-muted" id="lobby-info"></p>
+            <label for="lobby-name">Your name</label
+            ><input
+              id="lobby-name"
+              maxlength="24"
+              placeholder="Your name"
+              autocomplete="nickname"
+            />
+            <div class="mt-5">
+              <button class="btn btn--primary" id="lobby-join">
+                Join meeting
+              </button>
+            </div>
+          </div>
+          <div class="card is-hidden" id="lobby-ended">
+            <h1 class="title-md">This meeting has ended</h1>
+            <p class="text-muted" id="lobby-message">
+              The passcode has expired.
+            </p>
+            <a class="btn btn--primary" href="#create">Create a new meeting</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="is-hidden" id="room">
+        <div class="container">
+          <div class="card room-bar">
+            <b>🎥 MeetLink</b><span class="pill" id="expiry-badge"></span
+            ><span class="pill" id="people-count"></span>
+            <span class="row ml-auto"
+              ><button id="btn-invite">Invite</button
+              ><button class="btn btn--danger" id="btn-leave">
+                Leave
+              </button></span
+            >
+          </div>
+          <div id="invite-panel" class="card is-hidden mb-3">
+            <div class="text-muted text-sm">Passcode</div>
+            <div class="passcode" id="invite-code"></div>
+            <div class="row mt-3">
+              <button id="copy-invite-code">Copy passcode</button
+              ><button id="copy-invite-link">Copy link</button>
+            </div>
+          </div>
+          <p class="text-sm text-muted" id="room-notice"></p>
+          <div class="room-layout">
+            <section class="card" aria-label="Call">
+              <div id="video-grid"></div>
+              <div class="empty-state" id="call-empty">
+                <b>No call yet</b><br />Use the buttons below to start a video
+                or voice call. Others can join it any time.
+              </div>
+            </section>
+            <section class="card" id="chat-panel" aria-label="Chat">
+              <div class="people" id="people-list"></div>
+              <div id="chat-log" aria-live="polite"></div>
+              <div class="row mt-3 row--nowrap">
+                <button
+                  id="chat-image-btn"
+                  aria-label="Share image"
+                  title="Share image"
+                >
+                  🖼️</button
+                ><input
+                  type="file"
+                  id="chat-image-input"
+                  accept="image/*"
+                  class="is-hidden"
+                /><input
+                  id="chat-input"
+                  placeholder="Message everyone…"
+                  maxlength="500"
+                  aria-label="Message"
+                /><button class="btn btn--primary" id="chat-send">Send</button>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div id="controls">
+          <button class="btn btn--primary" id="btn-video">📹 Start video</button
+          ><button id="btn-voice">🎤 Voice only</button
+          ><button id="btn-mute" class="is-hidden">Mute</button
+          ><button id="btn-camera" class="is-hidden">Camera off</button
+          ><button class="btn btn--danger is-hidden" id="btn-end-call">
+            End call
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        MeetLink · Live-only meetings. Chat and images aren’t stored after you
+        leave.
+      </div>
+    </footer>
+    <div id="toast" role="status"></div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

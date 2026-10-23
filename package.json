@@ -1,0 +1,9 @@
+{
+  "name": "meetlink",
+  "version": "1.0.0",
+  "description": "Meeting links with passcode, auto-expiry, chat, images, video and voice calls",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
